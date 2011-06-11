@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="basic keywords" />
+<meta name="description" content="basic description" />
+<meta name="author" content="Kent Heberling Web Design - http://www.khwebdesign.net" />
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+<title>Vertical Tabs</title>
+<style>
+body{background: #cccccc; margin: 0px; padding: 0px;}
+#wrapper{background: #ffffff; -moz-box-shadow: 0px 0px 10px #666; -webkit-box-shadow: 0px 0px 10px #666; width: 960px; margin: 0 auto; min-height: 600px;}
+h1 {text-align: center; font-size: 42px; font-family: Georgia, "Times New Roman", Times, serif; color: #333333; margin: 0px; padding: 0px;}
+</style>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="verticaltabs/js/verticaltabs.pack.js"></script> <!--http://dean.edwards.name/packer/-->
+<link rel="stylesheet" href="verticaltabs/css/verticaltabs.css" />
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#textExample").verticaltabs({speed: 500,slideShow: false,activeIndex: 2});
+		$("#imageExample").verticaltabs({speed: 1000,slideShow: true,slideShowSpeed: 3000,activeIndex: 0,playPausePos: "topRight"});
+	});
+</script>
+
+
+
+</head>
+<body>
+<div id="wrapper">
+	<h1>Vertical Tabs</h1>
+    
+    <!-- Text Example -->
+	<div class="verticalslider" id="textExample">
+        <ul class="verticalslider_tabs">
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Praesent Pulvinar</a></li>
+            <li><a href="#">Nunc Adipiscing</a></li>
+            <li><a href="#">Praesent Dapibus</a></li>                        
+        </ul>
+        <ul class="verticalslider_contents">
+            <li>
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan placerat bibendum. Etiam ut nunc sed purus tempus varius. Donec id magna massa, posuere consectetur neque. Mauris tortor lacus, iaculis a pulvinar luctus, lobortis vel velit. In elementum lorem eu felis fermentum placerat et sit amet ligula. Integer euismod augue eu massa tincidunt consectetur. Suspendisse potenti. Donec in enim sollicitudin enim dignissim imperdiet ut et dolor. Phasellus nec risus vel nunc hendrerit auctor. Sed rhoncus sapien at nisl aliquam luctus. </p></li>
+            <li>
+            <h2>Praesent Pulvinar</h2>
+            <p>Praesent pulvinar, lorem nec ullamcorper semper, ipsum erat vestibulum lacus, in sodales lorem mi in leo. Vestibulum et rhoncus tellus. Curabitur mauris enim, vehicula sit amet euismod a, eleifend at dui. Vivamus sollicitudin, nunc pharetra porttitor lobortis, felis odio hendrerit mi, id ultricies urna enim quis lectus. Suspendisse convallis ipsum egestas velit fermentum ac volutpat dui dictum. Pellentesque sed ultrices justo. Ut lacus odio, porttitor quis tincidunt at, imperdiet vel eros. Duis ac velit neque. Integer semper egestas odio id suscipit. Maecenas eu diam in urna fringilla viverra eget sit amet ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+            <li>
+            <h2>Nunc Adipiscing</h2>
+            <p>Nunc adipiscing purus id orci rutrum placerat. Nam posuere elementum ipsum quis faucibus. Fusce fermentum turpis ac erat mollis sit amet varius mi placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ante justo, varius quis dignissim nec, condimentum in dui. Nulla sed lectus eu nunc vehicula vulputate vel nec velit. Integer eu purus nunc. Donec odio augue, sagittis pellentesque adipiscing id, dignissim vel enim. Maecenas a risus est.</p></li>
+            <li>
+            <h2>Praesent Dapibus</h2>
+            <p>Praesent dapibus metus vitae velit blandit tempor. Donec dignissim tempus neque, a vestibulum massa aliquam sed. Vestibulum velit quam, facilisis vel pharetra nec, bibendum eget mauris. In vitae ligula ac justo varius ullamcorper. Nullam vitae urna eu metus pellentesque vehicula vel sit amet nibh. Cras nec velit dictum neque imperdiet congue in nec eros. Suspendisse ante felis, eleifend sed pellentesque id, sagittis ut magna. .</p></li>                        
+        </ul>
+    </div> 
+    
+    <!-- Image Example -->
+	<div class="verticalslider" id="imageExample">
+        <ul class="verticalslider_tabs image">
+            <li><a href="#">Trees and a Lake</a></li>
+            <li><a href="#">Stone Wall</a></li>
+            <li><a href="#">Mountain Scene</a></li>
+            <li><a href="#">Sunset on a Lake</a></li>                         
+        </ul>
+        <ul class="verticalslider_contents">
+            <li><img src="images/1.jpg" /></li>
+          <li><img src="images/2.jpg" /></li>
+          <li><img src="images/3.jpg" /></li>
+            <li><img src="images/4.jpg" /></li>                       
+        </ul>
+    </div>        
+</div>
+</body>
+</html>

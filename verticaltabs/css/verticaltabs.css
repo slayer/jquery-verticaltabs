@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* Container */
+.verticalslider {
+  border: 1px solid #666666;
+  overflow: hidden;
+  max-width: 1500px;
+  margin-top: 25px;
+  background: #edeff4;
+  border: 1px solid #d8dfea;
+  min-height: 700px; }
+
+/* Tabs */
+.verticalslider_tabs {
+  float: left;
+  width: 150px;
+  margin: 0px;
+  padding: 0px; }
+  .verticalslider_tabs li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; }
+  .verticalslider_tabs a:link, .verticalslider_tabs a:visited {
+    display: block;
+    width: 130px;
+    height: 29px;
+    padding: 18px 10px 0px 20px;
+    border-bottom: 1px solid #dddddd;
+    text-decoration: none; }
+  .verticalslider_tabs a:hover, .verticalslider_tabs a:active {
+    background: #e3e8f0; }
+  .verticalslider_tabs li:first-child a:link, .verticalslider_tabs li:first-child a:visited {
+    border-top: none;
+    height: 30px; }
+  .verticalslider_tabs .activeTab a:link, .verticalslider_tabs .activeTab a:visited, .verticalslider_tabs .activeTab a:hover, .verticalslider_tabs .activeTab a:active {
+    background: white;
+    border-right: 1px solid white; }
+
+.verticalslider .arrow {
+  background: url(/images/admin/verticaltabs/arrow.png);
+  width: 27px;
+  height: 60px;
+  position: absolute;
+  z-index: 1000;
+  margin-left: 160px;
+  margin-top: -55px; }
+
+/* Contents */
+.verticalslider_contents li {
+  margin: 0px;
+  padding: 0px 10px 10px 50px;
+  max-width: 1000px;
+  overflow: hidden;
+  position: absolute;
+  list-style-type: none; }
+  .verticalslider_contents li p {
+    margin: 5px 20px;
+    padding: 0px; }
+
+.verticalslider_contents {
+  float: left;
+  width: 500px;
+  margin: 0px;
+  padding: 10px 10px 10px 40px; }
+  .verticalslider_contents.activeContent {
+    display: block; }
+  .verticalslider_contents.hiddenContent {
+    display: none; }
+
+/* Play Pause */
+.verticalslider .playPause a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 50; }
+.verticalslider .play a:link, .verticalslider .play a:visited {
+  background: url(/images/admin/verticaltabs/plays.png) no-repeat 0 0;
+  display: none; }
+.verticalslider .pause a:link, .verticalslider .pause a:visited {
+  background: url(/images/admin/verticaltabs/pauses.png) no-repeat 0 0; }
+.verticalslider .pause a:hover, .verticalslider .pause a:active {
+  background-position: 0px -60px;
+  border-bottom: none; }
+.verticalslider .play a:hover, .verticalslider.play a:active {
+  background-position: 0px -60px;
+  border-bottom: none; }
+
+/* Float Right Styles
+ *.verticalslider_tabs {float: right;}
+ *.verticalslider .arrow {margin-left: -27px; background: url(../images/arrow-right.png); }
+ *.verticalslider_tabs a:link, .verticalslider_tabs a:visited{border-left: 1px solid #666666; border-right: none;}
+ *.verticalslider_tabs .activeTab a:link, .verticalslider_tabs .activeTab a:visited{border-left: 1px solid #ffffff;}
+ *.verticalslider_tabs .activeTab a:hover, .verticalslider_tabs .activeTab a:active{border-left: 1px solid #ffffff;} */
